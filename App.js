@@ -34,6 +34,7 @@ const TabNavigator = () => {
           tabBarIcon: ({color}) => (
             <Entypo name="home" size={32} color={color} />
           ),
+          headerShown: false,
         }}
       />
       <Tab.Screen
@@ -70,7 +71,7 @@ const App = () => {
         <Stack.Screen
           name="Details"
           component={Details}
-          // options={{headerShown: false}}
+          options={{headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>
